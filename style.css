@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(218, 218, 218);
+    border-left:3px solid rgb(156, 32, 32);
+    border-right:3px solid rgb(156, 32, 32);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h1{
+    text-align: center;
+    color:darkred;
+}
+div{
+    padding:10px;
+}
+header{
+    text-align: center;
+    border-bottom: 3px solid rgb(156, 32, 32);
+    position:sticky;
+    top:0;
+    font-size: larger;
+    color:rgb(156, 32, 32);
+    text-decoration:none;
+    padding:10px;
+    background-color: rgb(218, 218, 218);
+    
+}
+html{
+    font-family:"Courier One",monospace;
+    margin-left:5%;
+    margin-right:5%;
+    background-color: black;
+    cursor:url("./eye1.png"),auto;
+}
+a{
+    color:black;
+    text-decoration: none;
+    cursor:url("./eye2.png"),auto;
+}
+.headerstyle{
+    padding:6px;
+}
+.headerstyle:hover{
+    background-color:  rgb(185, 178, 178);
+    
+}
+.separator{
+    border-bottom: 3px solid rgb(156, 32, 32);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:10px;
+}
+img{
+    width:30%;
+    height:30%;
+    display:inline-block;
+    margin:5%;
+    border:3px solid rgb(156, 32, 32);
+    border-radius:5%;
+}
+.tablemaker{
+    display:flex;
+    flex-direction: row;
+}
