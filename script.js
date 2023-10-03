@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const message = document.getElementById("messageSubmission")
     const userName = document.getElementById("nameSubmission")
     const commSection = document.getElementById("commSection");
+    const display = document.getElementById("display");
+    let lightDark = 1;
     
     subButton.addEventListener("click",(event)=>{
-        console.log(userName.value == "");
         if(message.value != ""){
             temp = document.createElement("li");
             if(userName.value != ""){
@@ -50,4 +51,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
             userName.value = "";
         }
     });
+
+    display.addEventListener("click",(event)=>{
+        if(lightDark > 0){
+            document.documentElement.style.setProperty("--backgroundclr", "black");
+            document.documentElement.style.setProperty("--txtclr", "rgb(218, 218, 218)");
+            document.documentElement.style.setProperty("--linkhvr", "#1b1b1b");
+            lightDark *=-1;
+        }
+        else{
+            document.documentElement.style.setProperty("--backgroundclr", "rgb(218, 218, 218)");
+            document.documentElement.style.setProperty("--txtclr","black");
+            document.documentElement.style.setProperty("--linkhvr", "rgb(185, 178, 178)");
+            lightDark *= -1;
+        }
+    })
+
 });
