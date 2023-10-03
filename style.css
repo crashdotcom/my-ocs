@@ -62,3 +62,6 @@ img{
     display:flex;
     flex-direction: row;
 }
+#commSection{
+    list-style: none;
+}

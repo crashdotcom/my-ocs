@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex">
     <title>Home Page</title>
     <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
 </head>
 <header>
     <a class="headerstyle" href="./index.html" >Home</a>
@@ -67,14 +68,19 @@
             </div>
             
         </div>
-
-        <form>Got something to say?
+        <div class="separator"></div>
+        <form id="submissionForm">Got something to say?
             <br><br>
-            <input type="text" value="Name"><br><br>
-            <input type="text" value="Message"><br><br>
-            <input type="button" value="Submit">
+            Name: <input id="nameSubmission" type="text" ><br><br>
+            Message*: <input id="messageSubmission" type="text" ><br><br>
+            <input id ="submitButton" type="button" value="Submit">
         </form>
-        
+        <h3 style="text-align: center;">Comments</h3>
+        <ul id="commSection">
+            
+
+
+        </ul>
     </div>
 </body>
 </html>
