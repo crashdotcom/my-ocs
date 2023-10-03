@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     display.addEventListener("click",(event)=>{
-        console.log("pressed button");
         if(lightDark > 0){
             document.documentElement.style.setProperty("--backgroundclr", "black");
             document.documentElement.style.setProperty("--txtclr", "rgb(218, 218, 218)");
